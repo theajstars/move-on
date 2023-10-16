@@ -1,0 +1,52 @@
+@import "../../Assets/Styles/Variables.scss";
+.home-container {
+  height: 100vh;
+  box-sizing: border-box;
+  .logo {
+    height: 140px;
+    margin-bottom: 100px;
+  }
+  .login,
+  .register {
+    width: 400px;
+    cursor: pointer;
+    height: 45px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    transition-duration: 0.12s;
+  }
+  .login {
+    background-color: $PurpleDefault;
+    border-color: $PurpleDefault;
+    color: $White;
+    &:hover {
+      background-color: $PurplePrimary;
+    }
+  }
+  .register {
+    background-color: transparent;
+    color: $BluePrimary;
+    border-color: $BluePrimary;
+    &:hover {
+      background-color: $BluePrimary;
+      color: $White;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    & {
+      .login,
+      .register,
+      .logo {
+        width: 90vw;
+      }
+      .logo {
+        margin-bottom: 10px;
+      }
+      .login,
+      .register {
+        height: 40px;
+      }
+    }
+  }
+}

@@ -1,12 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import Home from "./pages/Home";
+
+import "./Assets/Styles/Index.scss";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Ballsags</h2>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route index path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
