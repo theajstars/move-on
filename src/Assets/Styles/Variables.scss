@@ -1,8 +1,19 @@
 $White: #fff;
+$WhitePrimary: #f8f8f8;
 
 $PurpleDefault: #1b1464;
 $PurplePrimary: #662d91;
 
 $BluePrimary: #07387c;
+$BlueDark: #022150;
 
 $GrayPrimary: #79869f;
+$GraySecondary: rgb(204 203 204);
+
+.text-blue-dark {
+  color: $BlueDark;
+}
+
+.text-gray-primary {
+  color: $GrayPrimary;
+}

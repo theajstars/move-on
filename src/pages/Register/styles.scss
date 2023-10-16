@@ -2,4 +2,84 @@
 .register-container {
   height: 100vh;
   box-sizing: border-box;
+  .register {
+    height: 650px;
+    .logo {
+    }
+
+    .form-row {
+      width: 650px;
+      .form-control {
+        .label {
+          margin: 5px 7px;
+        }
+        .container {
+          border: 1px solid;
+          height: 40px;
+          border-radius: 8px;
+          .icon,
+          .addon {
+            padding: 0 15px;
+            box-sizing: border-box;
+            color: $GrayPrimary;
+          }
+          .input {
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            height: 100%;
+            width: -webkit-fill-available;
+            background-color: transparent !important;
+            border-radius: 8px;
+            font-size: 15px;
+          }
+          .pin {
+            letter-spacing: 6px;
+
+            font-weight: 500;
+
+            &::placeholder {
+              letter-spacing: normal;
+              font-weight: 400;
+            }
+            &[type="password"] {
+              font-weight: 900;
+            }
+          }
+        }
+      }
+      .form-control-full {
+        width: 100%;
+      }
+      .form-control-half {
+        width: 48%;
+      }
+    }
+    .button {
+      width: 100%;
+      cursor: pointer;
+      height: 45px;
+      margin: 10px 0;
+      font-weight: 500;
+      font-size: 16px;
+      transition-duration: 0.12s;
+    }
+    .submit {
+      background-color: $PurpleDefault;
+      border-color: $PurpleDefault;
+      color: $White;
+      &:hover {
+        background-color: $PurplePrimary;
+      }
+    }
+    .login {
+      background-color: transparent;
+      border-color: $BluePrimary;
+      color: $BluePrimary;
+      &:hover {
+        background-color: $BluePrimary;
+        color: $White;
+      }
+    }
+  }
 }

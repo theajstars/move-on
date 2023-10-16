@@ -1,5 +1,9 @@
 @import "./Components.scss";
 @import "./Fonts.scss";
+@import "./Variables.scss";
+body {
+  background-color: $White;
+}
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -23,8 +27,8 @@
 .justify-end {
   justify-content: flex-end;
 }
-.justify-start {
-  justify-content: flex-start;
+.justify-between {
+  justify-content: space-between;
 }
 .display-none {
   display: none;
